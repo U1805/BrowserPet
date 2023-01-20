@@ -1,0 +1,20 @@
+.marisa-txt {
+    height: 30px;
+    background: #F4F6FB;
+    border: 5px solid white;
+    color: #5f5f9c;;
+    font-size: 20px;
+    text-align: center;
+}
+
+.marisa-content {
+    display: none;
+}
+
+.marisa-ext:hover .marisa-content {
+    display: block;
+}
+
+.button1 {
+    cursor: pointer;
+}

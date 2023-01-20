@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script type="module" src="./lib/dagger.min.js"></script>
+    <script type="dagger/configs"></script> -->
+    <title>popup</title>
+    <!-- <script>
+        function load(){
+            var keys;
+            chrome.storage.local.get(null, (items)=>{
+                    keys = Object.keys(items);
+            })
+            return keys;
+        }
+    </script> -->
+</head>
+
+<body>
+    <script type="module"  crossorigin="anonymous" src="./lib/dagger.min.js"  defer></script>
+    <script type="dagger/configs"></script>
+    <div dg-cloak +loading="{ message: 'Hello dagger!' }">
+        <button +click="alert($scope.message)">${ $scope.message }</button>
+      </div>
+</body>
+
+</html>
