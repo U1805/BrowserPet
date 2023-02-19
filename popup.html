@@ -3,28 +3,31 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <script type="module" src="./lib/dagger.min.js"></script>
-    <script type="dagger/configs"></script> -->
-    <title>popup</title>
-    <!-- <script>
-        function load(){
-            var keys;
-            chrome.storage.local.get(null, (items)=>{
-                    keys = Object.keys(items);
-            })
-            return keys;
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <style>
+        html {
+          height: 200px;
+          width: 200px;      
         }
-    </script> -->
+        </style>
+    <title>popup</title>
 </head>
 
 <body>
-    <script type="module"  crossorigin="anonymous" src="./lib/dagger.min.js"  defer></script>
-    <script type="dagger/configs"></script>
-    <div dg-cloak +loading="{ message: 'Hello dagger!' }">
-        <button +click="alert($scope.message)">${ $scope.message }</button>
-      </div>
+    <input id="input" type="text">
+    <!-- <div class="wrapper">
+        <span id="text">我把你当兄弟你却想着复制我？</span>
+        <p id="button">copy</p>
+     </div>
+     <div class="wrapper">
+        <span id="text">我把你当兄弟你却想着复制我？</span>
+        <p id="button">copy</p>
+     </div>
+     <div class="wrapper">
+        <span id="text">我把你当兄弟你却想着复制我？</span>
+        <p id="button">copy</p>
+     </div> -->
 </body>
-
+<script src="./lib/jquery.min.js"></script>
+<script src="./lib/popup.js"></script>
 </html>

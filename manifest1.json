@@ -1,0 +1,31 @@
+{
+    "name": "魔理沙浏览器桌宠",
+    "version": "0.1",
+    "description": "Build an Extension!",
+    "manifest_version": 2,
+    "background": {
+       "persistent": false,
+       "scripts": [ "lib/background.js" ]
+    },
+    "browser_action": {
+       "default_icon": {
+          "48": "img/icon48.png",
+          "96": "img/icon96.png"
+       },
+       "default_popup": "popup.html"
+    },
+    "content_scripts": [ {
+       "css": [ "css/style.css" ],
+       "js": [ "lib/jquery.min.js", "lib/tools.js", "lib/index.js" ],
+       "matches": [ "<all_urls>" ],
+       "run_at": "document_idle"
+    } ],
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+    "icons": {
+        "48": "img/icon48.png",
+        "96": "img/icon96.png"
+    },
+    "permissions": [ "storage" ],
+    "web_accessible_resources": [ "img/*" ]
+ }
+ 
