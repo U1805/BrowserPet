@@ -19,9 +19,33 @@
     z-inde:-10;
 }
 
-/* wrapper
-text
-btn */
+#container{
+    margin: 5px 10px 5px 10px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 5px 0px 5px 0px;
+    padding: 10px 1px;
+    border: 0px solid transparent;
+    background-color: rgba(100,77,237,0.08);
+    border-radius: 1.25em;
+    transition: all 0.2s linear;
+    user-select: none;
+}
+.time{
+    font-size: 10px;
+}
+svg{
+    display: block;
+}
+.btn{
+    width: 25px;
+    height: 100%;
+}
    
 
 /* .marisa-content {
