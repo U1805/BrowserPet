@@ -18,15 +18,14 @@
 <script src="./lib/index.js"></script>
 </script>
 <script>
-    var togglePlaying = Marisa.gif('walk');
-    Marisa.climb();
-    $('#play-pause-button').click(function() {
-        togglePlaying(); // 切换 isPlaying 变量的值
-    });
-    $("#title").change(function(){
-        togglePlaying();
-        togglePlaying = Marisa.gif($("#title").val());
-    })
-    // Marisa.action(API.action_list)
+    // var togglePlaying = Marisa.gif('walk');
+    // $('#play-pause-button').click(function() {
+    //     togglePlaying(); // 切换 isPlaying 变量的值
+    // });
+    // $("#title").change(function(){
+    //     togglePlaying();
+    //     togglePlaying = Marisa.gif($("#title").val());
+    // })
+    Marisa.action(API.action_list)
 </script>
 </html>
