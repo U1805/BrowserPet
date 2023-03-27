@@ -1,17 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="./jquery.min.js"></script>
-    <script src="./twemoji.min.js"></script>
+    <script src="./lib/jquery.min.js"></script>
+    <script src="./lib/twemoji.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     😍📚📬😦🌟
+    <button id="play-pause-button">stop</button>
+    <input id="title" type="text">
 </body>
-<script src="./tools.js"></script>
-<script src="./index.js"></script>
+<script src="./lib/tools.js"></script>
+<script src="./lib/index.js"></script>
+</script>
+<script>
+    var togglePlaying = Marisa.gif('walk');
+    Marisa.climb();
+    $('#play-pause-button').click(function() {
+        togglePlaying(); // 切换 isPlaying 变量的值
+    });
+    $("#title").change(function(){
+        togglePlaying();
+        togglePlaying = Marisa.gif($("#title").val());
+    })
+    // Marisa.action(API.action_list)
 </script>
 </html>
